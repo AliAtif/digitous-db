@@ -14,3 +14,26 @@ mongoose.connect(
   });
 
   const characterModel = mongoose.model("cars", charactersSchema);
+
+  characterModel.deleteMany({}).then(() =>{
+    characterModel.create([
+        {
+            mark: "Renault",
+            model: "Espace",
+            year:  1999 
+        },
+
+        {
+            mark: "Renault",
+            model: "Scenic",
+            year: 2004
+        },
+
+        {
+            mark: "Peugeot",
+            model: "308",
+            year:  2017
+        }
+    ])
+})
+    
