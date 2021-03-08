@@ -37,17 +37,5 @@ mongoose.connect(
     ])
 });
 
-// characterModel.updateOne(
-//     {
-//         mark: "Renault",
-//         model: "Espace",
 
-//     },
-
-//     {
-//         year: 2000
-//     }
-// ).then((response) => {
-//     console.log(response);
-// })
     
