@@ -8,7 +8,7 @@ mongoose.connect(
   );
 
   const charactersSchema = new mongoose.Schema({
-    marque: String,
+    mark: String,
     model: String,
     year: Number,
   });
@@ -35,5 +35,19 @@ mongoose.connect(
             year:  2017
         }
     ])
-})
+});
+
+// characterModel.updateOne(
+//     {
+//         mark: "Renault",
+//         model: "Espace",
+
+//     },
+
+//     {
+//         year: 2000
+//     }
+// ).then((response) => {
+//     console.log(response);
+// })
     
