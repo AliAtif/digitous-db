@@ -37,17 +37,7 @@ mongoose.connect(
     ])
 });
 
-// characterModel.find({
-//     year: { $gt: 2015 }
-// }).then(response => {
-//     console.log(response)
-// })
 
-// characterModel.find({
-//     model: /0/
-// }).then(response => {
-//     console.log(response)
-// })
 
 
     
