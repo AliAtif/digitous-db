@@ -139,8 +139,8 @@ mongoose.connect("mongodb://localhost:27017/census",
 //   cityModel
 //   .aggregate()
 //   .group({ 
-//          _id: "$department",
-//           average: { $avg: "$population" }
+//          _id: { department: "$department" },
+//           averagePopulation: { $avg: "$population" }
 //         })
 //   .then((response) => { console.log(response) });   
   
