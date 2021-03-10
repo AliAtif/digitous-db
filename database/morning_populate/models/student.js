@@ -7,11 +7,11 @@ mongoose.connect(
     }
   );
 
-  const StudentSchema = new mongoose.Schema({
+  const studentSchema = new mongoose.Schema({
 
-    ID: ObjectId,
+    _id:      mongoose.Types.ObjectId,
     firstName: String,
-    surname: String,
+    surname:   String,
     address: [{ type: mongoose.Types.ObjectId, ref: "address" }],
   });
 
