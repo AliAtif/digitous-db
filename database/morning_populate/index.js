@@ -1,16 +1,7 @@
-const mongoose = require('mongoose');
-mongoose.connect(
-    "mongodb://localhost:27017/mongoose_populate",
-    { useNewUrlParser: true, useUnifiedTopology: true },
-    () => {
-      console.log("DB connected");
-    }
-  );
+const mongoose = require("mongoose");
+const studentModel = require("./models/student");
+const addressModel = require("./models/address");
 
-  const StudentSchema = new mongoose.Schema({
-
-    ID: ObjectId,
-    firstName: String,
-    surname: String,
-    address: ObjectId 
-  });
+mongoose.connect("mongodb://localhost:27017/morning_populate", () => {
+  console.log("DB connected");
+});
