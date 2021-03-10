@@ -146,7 +146,7 @@ mongoose.connect("mongodb://localhost:27017/census",
   
 //   cityModel
 //   .aggregate()
-//   .sort({infos: {$population: 1}})
+//   .sort({infos: {$population: -1}})
 //   .then((response) => { console.log(response) });
 
 // cityModel
@@ -154,9 +154,17 @@ mongoose.connect("mongodb://localhost:27017/census",
 // .group({
 //         _id: { department: "$department"},
 //         sumOfCitiesInDepart: { $sum: 1 }
-//     })
+//     }
 //     .then((response) => console.log(response));
 
+//  .match({
+  // city:/^p/i
+ // city: {
+  //  $regex:"^p",
+ //   $options:"i" 
+
+ // }
+//})
 
    
 
